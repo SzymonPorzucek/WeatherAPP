@@ -12,7 +12,7 @@ const API_KEY = "&appid=03e8cb5eec785328d83f7c477795b4af";
 const API_UNITS = "&units=metric";
 
 const getWeather = () => {
-	const city = input.value || "rome";
+	const city = input.value
 	const URL = API_LINK + city + API_KEY + API_UNITS;
 
 	axios.get(URL).then(res => {
